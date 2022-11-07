@@ -35,7 +35,76 @@ const text = ['I am a Pakistani Citizen.',
     'I am a student of Software Development.',
 ];
 ```
+After this, we will create an ```onEvent``` function that will do our actual action. This function will be triggered whenever we will click our button. Inside this function, i have used ternary function to change the text of our button and an if statemnt to change the text of our paragraph. Function will count the clicks of our button and will change the texts accordingly. The ```onEvent``` function is as follow:
+```JavaScript
+let n = 0;
 
+onEvent('click', btn, function () {
+    btn.innerText = (n === 2) ? 'Again ?' : 'More';
+
+    if (n == 2) {
+        para.innerText = text[n = 0];
+        return;
+    }
+    para.innerText = text[++n];
+});
+```
+So, by using these techniques and functions, we can change the text and by taking this example in mind, we can change other stuff too. 
+The complete JS code is as follow:
+
+```JavaScript
+'use strict';
+
+function onEvent(event, selector, callback) {
+    return selector.addEventListener(event, callback);
+}
+
+function select(selector, parent = document) {
+    return parent.querySelector(selector);
+}
+
+//-----------------------------------------------------------------------------------------
+
+const content = select('.content');
+const para = select('.para');
+const btn = select('.btn');
+const footer = select('.footer-nav');
+
+
+//---------------------adding classes for animation:
+function animation() {
+    para.classList.add('animation-para');
+    btn.classList.add('animation-btn');
+    footer.classList.add('animation-footer');
+}
+
+
+window.addEventListener('load', () => {
+    animation();
+});
+
+//---------------------changing text on clickin button:
+
+const text = ['I am a Pakistani Citizen.',
+    'I lives in Winnipeg.',
+    'I am a student of Software Development.',
+];
+
+
+let n = 0;
+
+onEvent('click', btn, function () {
+    btn.innerText = (n === 2) ? 'Again ?' : 'More';
+
+    if (n == 2) {
+        para.innerText = text[n = 0];
+        return;
+    }
+    para.innerText = text[++n];
+});
+```
+
+## References to learn more:
 
 
 

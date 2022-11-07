@@ -105,6 +105,10 @@ onEvent('click', btn, function () {
 ```
 
 ## References to learn more:
+[W3Schoold](https://www.w3schools.com/)
 
+[Mozilla Developer Tools](https://developer.mozilla.org/en-US/)
+
+[Stack OverFlow](https://stackoverflow.com/)
 
 

@@ -6,6 +6,10 @@ Click [here](https://mian-azam.github.io/changing-text-on-clicks/) to see the ac
 ###
 
 ## Explantion of how I did it:
-First of all I created HTML file and CSS file, its tottaly up to you, how you want to structure your page and style it. But for this tutorial, two elemnets of HTML are necessary: ``` <p></p> ``` in which we have put the text that will be chnaged when we will click ```<button></Button>. 
+First of all I created HTML file and CSS file, its tottaly up to you, how you want to structure your page and style it. But for this tutorial, two elemnets of HTML are necessary: ``` <p></p> ``` in which we have put the text that will be chnaged when we will click ```<button></Button>```. 
 Creat a paragrapgh and a button and style it however you like. The core of this tutorial is to change the text of inside ```<p></p>``` and also innertext of ```<buuton></button>```, on clicking that button.
+
+## Let's dive into the action 
+So after creating your page structure with ```HTML``` and styling it with ``` CSS```, we will work on the actual outcome of this project i.e 'Changing text on click', and we will do it by ```JavaScript```. 
+
 

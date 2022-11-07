@@ -11,5 +11,19 @@ Creat a paragrapgh and a button and style it however you like. The core of this 
 
 ## Let's dive into the action 
 So after creating your page structure with ```HTML``` and styling it with ``` CSS```, we will work on the actual outcome of this project i.e 'Changing text on click', and we will do it by ```JavaScript```. 
+First of all, I created utility functions that will be usefull for calling elemnts from HTML to JS. 
+```
+```JavaScript
+
+
+function onEvent(event, selector, callback) {
+    return selector.addEventListener(event, callback);
+}
+
+function select(selector, parent = document) {
+    return parent.querySelector(selector);
+}
+```
+
 
 

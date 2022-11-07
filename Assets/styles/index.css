@@ -38,6 +38,7 @@ div.content {
 p {
     visibility: hidden;
     opacity: 0;
+    background-color: #833cff;
     font-size: 40px;
     color: #f0f2f4;
     transform: translateY(-10px);

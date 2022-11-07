@@ -12,7 +12,6 @@ Creat a paragrapgh and a button and style it however you like. The core of this 
 ## Let's dive into the action 
 So after creating your page structure with ```HTML``` and styling it with ``` CSS```, we will work on the actual outcome of this project i.e 'Changing text on click', and we will do it by ```JavaScript```. 
 First of all, I created utility functions that will be usefull for calling elemnts from HTML to JS. 
-```
 ```JavaScript
 
 
@@ -24,6 +23,19 @@ function select(selector, parent = document) {
     return parent.querySelector(selector);
 }
 ```
+We have assigned classes to our paragraph and button and will use those classes to call them in our JS.
+
+What I am gonna do here is, I will change the text of my paragraph for three times by clicking the button. (deifferent on each click)
+As well as on every click, text of my button will also be changed. So let's do it.
+
+We will creat an array in which we will add all the text that we want to change and each index will represent each line that will appear on each click. 
+```JavaScript
+const text = ['I am a Pakistani Citizen.',
+    'I lives in Winnipeg.',
+    'I am a student of Software Development.',
+];
+```
+
 
 
 
